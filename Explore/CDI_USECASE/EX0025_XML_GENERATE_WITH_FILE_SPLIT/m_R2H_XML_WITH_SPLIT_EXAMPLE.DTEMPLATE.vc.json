@@ -1,6 +1,6 @@
 {
   "content" : {
-    "description" : "This code will split the xml and generate a multiple file with multiple XMLs in it.   ",
+    "description" : "This code will split the xml and generate a multiple file with multiple XMLs in it.   dddd",
     "allowMaxFieldLength" : "false",
     "bigIntConvertType" : "ONLY_BIGINT",
     "documentType" : "MAPPING",
@@ -658,5 +658,5 @@
       }
     ]
   },
-  "vcsExportTime" : "2026-01-16 15:54:42 CET"
+  "vcsExportTime" : "2026-01-16 16:03:12 CET"
 }

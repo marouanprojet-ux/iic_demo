@@ -16,14 +16,14 @@
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : "This code will split the xml and generate a multiple file with multiple XMLs in it.   ",
+        "description" : "This code will split the xml and generate a multiple file with multiple XMLs in it.   dddd",
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2026-01-16T14:54:43.061Z",
+  "updateTime" : "2026-01-16T15:03:12.610Z",
   "objectRefs" : [ {
     "id" : "7YI3tWLOBGphpkT3cBmIyt",
     "name" : "EDX3_ORA_INFADEMO_DATA",
@@ -76,10 +76,7 @@
       "repoInfo" : {
         "repoHandle" : "0118KW36000000000014"
       },
-      "contextAttributes" : [ {
-        "name" : "id",
-        "value" : "@1"
-      } ],
+      "contextAttributes" : null,
       "additionalInfo" : {
         "description" : "HS_XML_SCHEMA_EMPLOYEE_WITH_DUMMYCOL",
         "contentType" : "JSON",
