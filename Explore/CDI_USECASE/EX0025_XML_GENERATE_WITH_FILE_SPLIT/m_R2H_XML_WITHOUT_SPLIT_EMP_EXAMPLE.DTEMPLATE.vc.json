@@ -1,0 +1,359 @@
+{
+  "content" : {
+    "description" : "This code will not split the xml and generate a single file with multiple XMLs in it.",
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "m_R2H_XML_WITHOUT_SPLIT_EMP_EXAMPLE",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "Source -> HB_XML_EMPLOYEE_SCHEMA_GENERATOR",
+        "groupLink" : "DefaultGroup -> DefaultGroup"
+      },
+      {
+        "link" : "HB_XML_EMPLOYEE_SCHEMA_GENERATOR -> Target",
+        "groupLink" : "DefaultOutputGroup -> DefaultGroup"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2023-08-18T05:10:00.834Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "EMPLOYEE_ID"
+            },
+            "name" : "EMPLOYEE_ID",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 7,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FIRST_NAME"
+            },
+            "name" : "FIRST_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 20,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LAST_NAME"
+            },
+            "name" : "LAST_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 25,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "EMAIL"
+            },
+            "name" : "EMAIL",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 25,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@7YI3tWLOBGphpkT3cBmIyt",
+          "connectionName" : "EDX3_ORA_INFADEMO_DATA",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "QUERY",
+          "typeSystem" : "Oracle",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "customQuery" : "SELECT EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL FROM INFADEMO_DATA.EMPLOYEES ORDER BY EMPLOYEE_ID",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "EMPLOYEE_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "EMPLOYEE_ID",
+                "nativeName" : "EMPLOYEE_ID",
+                "nativeType" : "decimal",
+                "original" : "false",
+                "precision" : 7,
+                "scale" : 0
+              },
+              {
+                "name" : "FIRST_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "FIRST_NAME",
+                "nativeName" : "FIRST_NAME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 20,
+                "scale" : 0
+              },
+              {
+                "name" : "LAST_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "LAST_NAME",
+                "nativeName" : "LAST_NAME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 25,
+                "scale" : 0
+              },
+              {
+                "name" : "EMAIL",
+                "fieldType" : "CONNECTOR",
+                "label" : "EMAIL",
+                "nativeName" : "EMAIL",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 25,
+                "scale" : 0
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2023-08-18T05:10:00.838Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "sessionProperties" : [
+          {
+            "name" : "Append if Exists",
+            "value" : "NO"
+          },
+          {
+            "name" : "Create Target Directory",
+            "value" : "NO"
+          },
+          {
+            "name" : "Header Options",
+            "value" : "No Header"
+          },
+          {
+            "name" : "Output Type",
+            "value" : "File"
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "dataAdapter" : {
+          "connectionId" : "saas:@cGoUvKHESUMi359dsVf3Op",
+          "connectionName" : "EDX_FLATFILE_TGT",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "TGT_XML_WITHOUT_SPLIT_EMP_EXAMPLE.xml",
+            "label" : "TGT_XML_WITHOUT_SPLIT_EMP_EXAMPLE.xml",
+            "path" : "TGT_XML_WITHOUT_SPLIT_EMP_EXAMPLE.xml",
+            "retainMetadata" : "false",
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "none"
+            }
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      },
+      {
+        "description" : "HB_XML_EMPLOYEE_SCHEMA_GENERATOR",
+        "createTime" : "2023-08-21T17:08:05.291Z",
+        "name" : "HB_XML_EMPLOYEE_SCHEMA_GENERATOR",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          },
+          {
+            "input" : "false",
+            "name" : "DefaultOutputGroup",
+            "output" : "true"
+          }
+        ],
+        "collectAllRoots" : "false",
+        "enablePassthrough" : "false",
+        "inputSorted" : "false",
+        "outputFormat" : "String",
+        "outputType" : "NONE",
+        "performanceMode" : "false",
+        "schemaId" : "@3sPtzPinQHUlBGoQNRIwCw",
+        "schemaName" : "HS_XML_SCHEMA_EMPLOYEE_WITHOUT_DUMMYCOL",
+        "uiCollectAllRoots" : "false",
+        "useLabels" : "false",
+        "outputFieldPrecision" : 1048576,
+        "outputField" : {
+          "name" : "Output",
+          "platformType" : {
+            "name" : "string"
+          },
+          "precision" : 1048576,
+          "scale" : 0
+        },
+        "xFieldMap" : {
+          "denormalized" : "false",
+          "mappings" : [
+            {
+              "groupName" : "Source",
+              "isRoot" : "false",
+              "xPath" : "/EMPLOYEES/EMPLOYEE",
+              "xfields" : [
+                {
+                  "name" : "EMPLOYEE_ID",
+                  "platformType" : {
+                    "name" : "decimal"
+                  },
+                  "precision" : 7,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/EMPLOYEES/EMPLOYEE/EMPLOYEE_ID"
+                },
+                {
+                  "name" : "FIRST_NAME",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 20,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/EMPLOYEES/EMPLOYEE/FIRST_NAME"
+                },
+                {
+                  "name" : "LAST_NAME",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 25,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/EMPLOYEES/EMPLOYEE/LAST_NAME"
+                },
+                {
+                  "name" : "EMAIL",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 25,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/EMPLOYEES/EMPLOYEE/EMAIL"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2026-01-16 15:54:42 CET"
+}

@@ -1,0 +1,662 @@
+{
+  "content" : {
+    "description" : "This code will split the xml and generate a multiple file with multiple XMLs in it.   ",
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "m_R2H_XML_WITH_SPLIT_EXAMPLE",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "Source -> EXP_KEY_GENERATION"
+      },
+      {
+        "link" : "EXP_KEY_GENERATION -> EXP_DETAIL_FILE"
+      },
+      {
+        "link" : "EXP_KEY_GENERATION -> AGG_EXP_MASTER_DATA"
+      },
+      {
+        "link" : "AGG_EXP_MASTER_DATA -> HB_XML_EMPLOYEE_SCHEMA_GENERATOR_2",
+        "groupLink" : "DefaultGroup -> DefaultGroup"
+      },
+      {
+        "link" : "EXP_DETAIL_FILE -> HB_XML_EMPLOYEE_SCHEMA_GENERATOR_2",
+        "groupLink" : "DefaultGroup -> DefaultGroup"
+      },
+      {
+        "link" : "HB_XML_EMPLOYEE_SCHEMA_GENERATOR_2 -> EXP_FILENAME_GENERATION",
+        "groupLink" : "DefaultOutputGroup -> DefaultGroup"
+      },
+      {
+        "link" : "TCL_EMPLOYEE_FILE_SEPARATOR -> Target"
+      },
+      {
+        "link" : "EXP_FILENAME_GENERATION -> TCL_EMPLOYEE_FILE_SEPARATOR"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2023-08-18T05:10:00.834Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "EMPLOYEE_ID"
+            },
+            "name" : "EMPLOYEE_ID",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 7,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FIRST_NAME"
+            },
+            "name" : "FIRST_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 20,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LAST_NAME"
+            },
+            "name" : "LAST_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 25,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "EMAIL"
+            },
+            "name" : "EMAIL",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 25,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@7YI3tWLOBGphpkT3cBmIyt",
+          "connectionName" : "EDX3_ORA_INFADEMO_DATA",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "QUERY",
+          "typeSystem" : "Oracle",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "customQuery" : "SELECT EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL FROM INFADEMO_DATA.EMPLOYEES ORDER BY EMPLOYEE_ID",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "EMPLOYEE_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "EMPLOYEE_ID",
+                "nativeName" : "EMPLOYEE_ID",
+                "nativeType" : "decimal",
+                "original" : "false",
+                "precision" : 7,
+                "scale" : 0
+              },
+              {
+                "name" : "FIRST_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "FIRST_NAME",
+                "nativeName" : "FIRST_NAME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 20,
+                "scale" : 0
+              },
+              {
+                "name" : "LAST_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "LAST_NAME",
+                "nativeName" : "LAST_NAME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 25,
+                "scale" : 0
+              },
+              {
+                "name" : "EMAIL",
+                "fieldType" : "CONNECTOR",
+                "label" : "EMAIL",
+                "nativeName" : "EMAIL",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 25,
+                "scale" : 0
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2023-08-18T05:10:00.838Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "sessionProperties" : [
+          {
+            "name" : "Append if Exists",
+            "value" : "NO"
+          },
+          {
+            "name" : "Create Target Directory",
+            "value" : "NO"
+          },
+          {
+            "name" : "Header Options",
+            "value" : "No Header"
+          },
+          {
+            "name" : "Output Type",
+            "value" : "File"
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "dataAdapter" : {
+          "connectionId" : "saas:@cGoUvKHESUMi359dsVf3Op",
+          "connectionName" : "EDX_FLATFILE_TGT",
+          "excludeDynamicFileNameField" : "true",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "true",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "TGT_FILE_NAME",
+            "label" : "TGT_FILE_NAME",
+            "path" : "TGT_FILE_NAME",
+            "retainMetadata" : "false",
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "none"
+            }
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      },
+      {
+        "description" : "EXP_KEY_GENERATION",
+        "createTime" : "2023-08-18T18:47:53.091Z",
+        "name" : "EXP_KEY_GENERATION",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "windowConfigurationEnabled" : "false",
+        "fields" : [
+          {
+            "name" : "VAR_COUNT_1",
+            "platformType" : {
+              "name" : "bigint"
+            },
+            "precision" : 19,
+            "scale" : 0,
+            "expFieldType" : "VARIABLE",
+            "expression" : "VAR_COUNT_1+1"
+          },
+          {
+            "name" : "VAR_COUNT_2",
+            "platformType" : {
+              "name" : "bigint"
+            },
+            "precision" : 19,
+            "scale" : 0,
+            "expFieldType" : "VARIABLE",
+            "expression" : "IIF( VAR_COUNT_1 <= $$Transaction_boundary ,1,\n\nIIF( MOD(VAR_COUNT_1,$$Transaction_boundary)=1,VAR_COUNT_2+1,VAR_COUNT_2   )\n)"
+          },
+          {
+            "defaultValue" : "ERROR('transformation error')",
+            "name" : "IDFK",
+            "platformType" : {
+              "name" : "bigint"
+            },
+            "precision" : 19,
+            "scale" : 0,
+            "expFieldType" : "OUTPUT",
+            "expression" : "VAR_COUNT_2"
+          },
+          {
+            "defaultValue" : "ERROR('transformation error')",
+            "name" : "IDPK",
+            "platformType" : {
+              "name" : "bigint"
+            },
+            "precision" : 19,
+            "scale" : 0,
+            "expFieldType" : "OUTPUT",
+            "expression" : "VAR_COUNT_2"
+          },
+          {
+            "defaultValue" : "ERROR('transformation error')",
+            "name" : "DATA_PK_GRP",
+            "platformType" : {
+              "name" : "bigint"
+            },
+            "precision" : 19,
+            "scale" : 0,
+            "expFieldType" : "OUTPUT",
+            "expression" : "VAR_COUNT_2"
+          },
+          {
+            "defaultValue" : "ERROR('transformation error')",
+            "name" : "EMP_ID_PK",
+            "platformType" : {
+              "name" : "bigint"
+            },
+            "precision" : 19,
+            "scale" : 0,
+            "expFieldType" : "OUTPUT",
+            "expression" : "VAR_COUNT_1"
+          }
+        ],
+        "windowSpec" : {
+          "allRowsFollowing" : "false",
+          "allRowsPreceding" : "false",
+          "endOffset" : 0,
+          "startOffset" : 0,
+          "partitionKeys" : null
+        }
+      },
+      {
+        "description" : "EXP_DETAIL_FILE",
+        "createTime" : "2023-08-18T21:52:13.869Z",
+        "name" : "EXP_DETAIL_FILE",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "true",
+                "include" : "true",
+                "bulkRenameOption" : {
+                  "literal" : "EXP_",
+                  "suffix" : "false"
+                }
+              }
+            ]
+          }
+        ],
+        "windowConfigurationEnabled" : "false",
+        "windowSpec" : {
+          "allRowsFollowing" : "false",
+          "allRowsPreceding" : "false",
+          "endOffset" : 0,
+          "startOffset" : 0,
+          "partitionKeys" : null
+        }
+      },
+      {
+        "description" : "AGG_EXP_MASTER_DATA",
+        "createTime" : "2023-08-18T21:54:19.684Z",
+        "name" : "AGG_EXP_MASTER_DATA",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "true",
+                "include" : "true",
+                "names" : [
+                  {
+                    "inputName" : "DATA_PK_GRP"
+                  },
+                  {
+                    "inputName" : "IDPK"
+                  }
+                ],
+                "bulkRenameOption" : {
+                  "literal" : "AGG_",
+                  "suffix" : "false"
+                }
+              }
+            ]
+          }
+        ],
+        "groupByFieldsList" : {
+          "fields" : [
+            {
+              "fieldName" : "AGG_IDPK"
+            },
+            {
+              "fieldName" : "AGG_DATA_PK_GRP"
+            }
+          ]
+        }
+      },
+      {
+        "description" : "HB_XML_EMPLOYEE_SCHEMA_GENERATOR_2",
+        "createTime" : "2023-08-18T22:07:53.327Z",
+        "name" : "HB_XML_EMPLOYEE_SCHEMA_GENERATOR_2",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          },
+          {
+            "input" : "false",
+            "name" : "DefaultOutputGroup",
+            "output" : "true"
+          }
+        ],
+        "collectAllRoots" : "false",
+        "enablePassthrough" : "true",
+        "inputSorted" : "false",
+        "outputFormat" : "String",
+        "outputType" : "NONE",
+        "performanceMode" : "false",
+        "schemaId" : "@dK77oPlIZMfhVNC6AdEQQe",
+        "schemaName" : "HS_XML_SCHEMA_EMPLOYEE_WITH_DUMMYCOL",
+        "uiCollectAllRoots" : "false",
+        "useLabels" : "false",
+        "outputFieldPrecision" : 1048576,
+        "outputField" : {
+          "name" : "Output",
+          "platformType" : {
+            "name" : "string"
+          },
+          "precision" : 1048576,
+          "scale" : 0
+        },
+        "xFieldMap" : {
+          "denormalized" : "false",
+          "mappings" : [
+            {
+              "groupName" : "AGG_EXP_MASTER_DATA",
+              "isRoot" : "false",
+              "xPath" : "/EMPLOYEES",
+              "xfields" : [
+                {
+                  "name" : "AGG_IDPK",
+                  "platformType" : {
+                    "name" : "bigint"
+                  },
+                  "precision" : 0,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "true"
+                }
+              ]
+            },
+            {
+              "groupName" : "EXP_DETAIL_FILE",
+              "isRoot" : "false",
+              "xPath" : "/EMPLOYEES/EMPLOYEE",
+              "xfields" : [
+                {
+                  "name" : "EXP_IDFK",
+                  "platformType" : {
+                    "name" : "bigint"
+                  },
+                  "precision" : 0,
+                  "scale" : 0,
+                  "foreignKey" : "true",
+                  "groupRef" : "AGG_EXP_MASTER_DATA",
+                  "primaryKey" : "false"
+                },
+                {
+                  "name" : "EXP_EMPLOYEE_ID",
+                  "platformType" : {
+                    "name" : "decimal"
+                  },
+                  "precision" : 7,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/EMPLOYEES/EMPLOYEE/EMPLOYEE_ID"
+                },
+                {
+                  "name" : "EXP_FIRST_NAME",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 20,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/EMPLOYEES/EMPLOYEE/FIRST_NAME"
+                },
+                {
+                  "name" : "EXP_LAST_NAME",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 25,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/EMPLOYEES/EMPLOYEE/LAST_NAME"
+                },
+                {
+                  "name" : "EXP_EMAIL",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 25,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/EMPLOYEES/EMPLOYEE/EMAIL"
+                },
+                {
+                  "name" : "EXP_EMP_ID_PK",
+                  "platformType" : {
+                    "name" : "bigint"
+                  },
+                  "precision" : 0,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "true"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "description" : "EXP_FILENAME_GENERATION",
+        "createTime" : "2023-08-18T22:18:00.013Z",
+        "name" : "EXP_FILENAME_GENERATION",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "windowConfigurationEnabled" : "false",
+        "fields" : [
+          {
+            "defaultValue" : "ERROR('transformation error')",
+            "name" : "TGT_FILE_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 250,
+            "scale" : 0,
+            "expFieldType" : "OUTPUT",
+            "expression" : "'TGT_XML_R2H_SPLIT_EXAMPLE_'||TO_CHAR(AGG_DATA_PK_GRP)||'.txt'"
+          }
+        ],
+        "windowSpec" : {
+          "allRowsFollowing" : "false",
+          "allRowsPreceding" : "false",
+          "endOffset" : 0,
+          "startOffset" : 0,
+          "partitionKeys" : null
+        }
+      },
+      {
+        "description" : "TCL_EMPLOYEE_FILE_SEPARATOR",
+        "createTime" : "2023-08-18T22:33:47.080Z",
+        "name" : "TCL_EMPLOYEE_FILE_SEPARATOR",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true",
+                "names" : [
+                  {
+                    "inputName" : "TGT_FILE_NAME"
+                  },
+                  {
+                    "inputName" : "Output"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "condition" : "TGT_FILE_NAME",
+        "falseBlock" : "TC_CONTINUE_TRANSACTION",
+        "fieldChangeCondition" : "true",
+        "trueBlock" : "TC_COMMIT_AFTER"
+      }
+    ],
+    "variables" : [
+      {
+        "aggregationType" : "MAX",
+        "expressionVariable" : "false",
+        "name" : "Transaction_boundary",
+        "platformType" : {
+          "name" : "integer"
+        },
+        "precision" : 10,
+        "retentionPolicy" : "NEVER",
+        "scale" : 0,
+        "defaultValue" : "7",
+        "description" : "Transaction_boundary"
+      }
+    ]
+  },
+  "vcsExportTime" : "2026-01-16 15:54:42 CET"
+}

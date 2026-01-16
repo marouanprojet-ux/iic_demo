@@ -1,0 +1,30 @@
+{
+  "objectInfo" : {
+    "id" : "dK77oPlIZMfhVNC6AdEQQe",
+    "name" : "HS_XML_SCHEMA_EMPLOYEE_WITH_DUMMYCOL",
+    "type" : "HSCHEMA",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0118KW36000000000014"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "HS_XML_SCHEMA_EMPLOYEE_WITH_DUMMYCOL",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2026-01-16T14:54:43.063Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
