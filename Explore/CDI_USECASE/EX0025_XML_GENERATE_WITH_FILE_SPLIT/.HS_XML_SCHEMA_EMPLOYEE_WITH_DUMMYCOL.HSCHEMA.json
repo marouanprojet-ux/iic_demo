@@ -16,14 +16,14 @@
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : "HS_XML_SCHEMA_EMPLOYEE_WITH_DUMMYCOL",
+        "description" : "HS_XML_SCHEMA_EMPLOYEE_WITH_DUMMYCOLddd",
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2026-01-20T22:54:28.898Z",
+  "updateTime" : "2026-01-20T23:48:33.141Z",
   "objectRefs" : [ ],
   "readableFileExtension" : null,
   "readableFilePresent" : false
