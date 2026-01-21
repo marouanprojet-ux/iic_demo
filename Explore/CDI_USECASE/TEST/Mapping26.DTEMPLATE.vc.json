@@ -1,0 +1,3329 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "Mapping26",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "Source -> HierarchyBuilder",
+        "groupLink" : "DefaultGroup -> DefaultGroup"
+      },
+      {
+        "link" : "Source -> Expression"
+      },
+      {
+        "link" : "HierarchyBuilder -> Expression1",
+        "groupLink" : "DefaultOutputGroup -> DefaultGroup"
+      },
+      {
+        "link" : "Aggregator -> Joiner",
+        "groupLink" : "DefaultGroup -> Detail"
+      },
+      {
+        "link" : "Expression -> Aggregator"
+      },
+      {
+        "link" : "Aggregator1 -> Joiner",
+        "groupLink" : "DefaultGroup -> Master"
+      },
+      {
+        "link" : "Expression1 -> Aggregator1"
+      },
+      {
+        "link" : "Joiner -> Target",
+        "groupLink" : "OutputGroup -> DefaultGroup"
+      }
+    ],
+    "parameters" : [
+      {
+        "input" : "true",
+        "output" : "false",
+        "precision" : 0,
+        "scale" : 0,
+        "allowRuntimeOverride" : "false",
+        "expressionVariable" : "false",
+        "name" : "NewParameter"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2025-11-12T16:12:26.707Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "sessionProperties" : [
+          {
+            "name" : "File Reader Truncate String Null",
+            "value" : "NO"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "Organization_1"
+            },
+            "name" : "Organization_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Organization_2"
+            },
+            "name" : "Organization_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Department_1"
+            },
+            "name" : "Department_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Department_2"
+            },
+            "name" : "Department_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Contact_1"
+            },
+            "name" : "Contact_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "First_Name_1"
+            },
+            "name" : "First_Name_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Middle_Name_1"
+            },
+            "name" : "Middle_Name_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Surname_1"
+            },
+            "name" : "Surname_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Title_1"
+            },
+            "name" : "Title_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Function_1"
+            },
+            "name" : "Function_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Salutation_1"
+            },
+            "name" : "Salutation_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Sub_Building_1"
+            },
+            "name" : "Sub_Building_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Sub_Building_2"
+            },
+            "name" : "Sub_Building_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Sub_Building_3"
+            },
+            "name" : "Sub_Building_3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Building_1"
+            },
+            "name" : "Building_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Building_2"
+            },
+            "name" : "Building_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Building_3"
+            },
+            "name" : "Building_3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Street_1"
+            },
+            "name" : "Street_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Street_2"
+            },
+            "name" : "Street_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Street_3"
+            },
+            "name" : "Street_3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Street_4"
+            },
+            "name" : "Street_4",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "House_Number_1"
+            },
+            "name" : "House_Number_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "House_Number_2"
+            },
+            "name" : "House_Number_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "House_Number_3"
+            },
+            "name" : "House_Number_3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "House_Number_4"
+            },
+            "name" : "House_Number_4",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Delivery_Service_1"
+            },
+            "name" : "Delivery_Service_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Delivery_Service_2"
+            },
+            "name" : "Delivery_Service_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Postal_Code_1"
+            },
+            "name" : "Postal_Code_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Locality_1"
+            },
+            "name" : "Locality_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Locality_2"
+            },
+            "name" : "Locality_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Locality_3"
+            },
+            "name" : "Locality_3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Locality_4"
+            },
+            "name" : "Locality_4",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Locality_5"
+            },
+            "name" : "Locality_5",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Locality_6"
+            },
+            "name" : "Locality_6",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Administrative_Division_Standard_1"
+            },
+            "name" : "Administrative_Division_Standard_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Administrative_Division_Standard_2"
+            },
+            "name" : "Administrative_Division_Standard_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Administrative_Division_Standard_3"
+            },
+            "name" : "Administrative_Division_Standard_3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Administrative_Division_Name_1"
+            },
+            "name" : "Administrative_Division_Name_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Administrative_Division_Name_2"
+            },
+            "name" : "Administrative_Division_Name_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Administrative_Division_Name_3"
+            },
+            "name" : "Administrative_Division_Name_3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Administrative_Division_Abbreviation_1"
+            },
+            "name" : "Administrative_Division_Abbreviation_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Administrative_Division_Abbreviation_2"
+            },
+            "name" : "Administrative_Division_Abbreviation_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Administrative_Division_Abbreviation_3"
+            },
+            "name" : "Administrative_Division_Abbreviation_3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Administrative_Division_ISO_1"
+            },
+            "name" : "Administrative_Division_ISO_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Administrative_Division_ISO_2"
+            },
+            "name" : "Administrative_Division_ISO_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Administrative_Division_ISO_3"
+            },
+            "name" : "Administrative_Division_ISO_3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Country_Name_1"
+            },
+            "name" : "Country_Name_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Country_Name_2"
+            },
+            "name" : "Country_Name_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Country_ISO3_1"
+            },
+            "name" : "Country_ISO3_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Country_ISO3_2"
+            },
+            "name" : "Country_ISO3_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Country_ISO2_1"
+            },
+            "name" : "Country_ISO2_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Country_ISO2_2"
+            },
+            "name" : "Country_ISO2_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Country_ISO_Number_1"
+            },
+            "name" : "Country_ISO_Number_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Country_ISO_Number_2"
+            },
+            "name" : "Country_ISO_Number_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Residue_Value_1"
+            },
+            "name" : "Residue_Value_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Residue_Type_1"
+            },
+            "name" : "Residue_Type_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Residue_Value_2"
+            },
+            "name" : "Residue_Value_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Residue_Type_2"
+            },
+            "name" : "Residue_Type_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Residue_Value_3"
+            },
+            "name" : "Residue_Value_3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Residue_Type_3"
+            },
+            "name" : "Residue_Type_3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Address_Lines_1"
+            },
+            "name" : "Address_Lines_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Address_Lines_2"
+            },
+            "name" : "Address_Lines_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Address_Lines_3"
+            },
+            "name" : "Address_Lines_3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Address_Lines_4"
+            },
+            "name" : "Address_Lines_4",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Address_Lines_5"
+            },
+            "name" : "Address_Lines_5",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Address_Lines_6"
+            },
+            "name" : "Address_Lines_6",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Last_Line_1"
+            },
+            "name" : "Last_Line_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Formatted_Address_Lines_1"
+            },
+            "name" : "Formatted_Address_Lines_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Formatted_Address_Lines_2"
+            },
+            "name" : "Formatted_Address_Lines_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Formatted_Address_Lines_3"
+            },
+            "name" : "Formatted_Address_Lines_3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Formatted_Address_Lines_4"
+            },
+            "name" : "Formatted_Address_Lines_4",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Formatted_Address_Lines_5"
+            },
+            "name" : "Formatted_Address_Lines_5",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Formatted_Address_Lines_6"
+            },
+            "name" : "Formatted_Address_Lines_6",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Formatted_Address_Lines_7"
+            },
+            "name" : "Formatted_Address_Lines_7",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Formatted_Address_Lines_8"
+            },
+            "name" : "Formatted_Address_Lines_8",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Formatted_Address_Lines_9"
+            },
+            "name" : "Formatted_Address_Lines_9",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Formatted_Address_Lines_10"
+            },
+            "name" : "Formatted_Address_Lines_10",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Formatted_Address_Lines_11"
+            },
+            "name" : "Formatted_Address_Lines_11",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Formatted_Address_Lines_12"
+            },
+            "name" : "Formatted_Address_Lines_12",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Formatted_Address_Lines_13"
+            },
+            "name" : "Formatted_Address_Lines_13",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Formatted_Address_Lines_14"
+            },
+            "name" : "Formatted_Address_Lines_14",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Formatted_Address_Lines_15"
+            },
+            "name" : "Formatted_Address_Lines_15",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Verification_Status_Code"
+            },
+            "name" : "Verification_Status_Code",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Result_Quality"
+            },
+            "name" : "Result_Quality",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Match_Percentage"
+            },
+            "name" : "Match_Percentage",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Address_Type"
+            },
+            "name" : "Address_Type",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SNA_Category"
+            },
+            "name" : "SNA_Category",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ID_TIERS"
+            },
+            "name" : "ID_TIERS",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "NOM"
+            },
+            "name" : "NOM",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PRENOM"
+            },
+            "name" : "PRENOM",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CONTACT_TYPE"
+            },
+            "name" : "CONTACT_TYPE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ADDRESS_LINE1"
+            },
+            "name" : "ADDRESS_LINE1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ADDRESS_LINE2"
+            },
+            "name" : "ADDRESS_LINE2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "HOUSE_NUMBER"
+            },
+            "name" : "HOUSE_NUMBER",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "STREET_NAME"
+            },
+            "name" : "STREET_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SUB_BUILDING"
+            },
+            "name" : "SUB_BUILDING",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "POSTAL_CODE"
+            },
+            "name" : "POSTAL_CODE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LOCALITY"
+            },
+            "name" : "LOCALITY",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ADMINISTRATIVE_DIVISION1"
+            },
+            "name" : "ADMINISTRATIVE_DIVISION1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "COUNTRY"
+            },
+            "name" : "COUNTRY",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "EMAIL"
+            },
+            "name" : "EMAIL",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "TELEPHONE"
+            },
+            "name" : "TELEPHONE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@izSVfHfBGKGjui0zKAmkEN",
+          "connectionName" : "Flat_address",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "address_out_v1.csv",
+            "label" : "address_out_v1.csv",
+            "objectName" : "address_out_v1.csv",
+            "path" : "address_out_v1.csv",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "Organization_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Organization_1",
+                "nativeName" : "Organization_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Organization_2",
+                "fieldType" : "CONNECTOR",
+                "label" : "Organization_2",
+                "nativeName" : "Organization_2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Department_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Department_1",
+                "nativeName" : "Department_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Department_2",
+                "fieldType" : "CONNECTOR",
+                "label" : "Department_2",
+                "nativeName" : "Department_2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Contact_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Contact_1",
+                "nativeName" : "Contact_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "First_Name_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "First_Name_1",
+                "nativeName" : "First_Name_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Middle_Name_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Middle_Name_1",
+                "nativeName" : "Middle_Name_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Surname_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Surname_1",
+                "nativeName" : "Surname_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Title_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Title_1",
+                "nativeName" : "Title_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Function_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Function_1",
+                "nativeName" : "Function_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Salutation_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Salutation_1",
+                "nativeName" : "Salutation_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Sub_Building_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Sub_Building_1",
+                "nativeName" : "Sub_Building_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Sub_Building_2",
+                "fieldType" : "CONNECTOR",
+                "label" : "Sub_Building_2",
+                "nativeName" : "Sub_Building_2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Sub_Building_3",
+                "fieldType" : "CONNECTOR",
+                "label" : "Sub_Building_3",
+                "nativeName" : "Sub_Building_3",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Building_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Building_1",
+                "nativeName" : "Building_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Building_2",
+                "fieldType" : "CONNECTOR",
+                "label" : "Building_2",
+                "nativeName" : "Building_2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Building_3",
+                "fieldType" : "CONNECTOR",
+                "label" : "Building_3",
+                "nativeName" : "Building_3",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Street_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Street_1",
+                "nativeName" : "Street_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Street_2",
+                "fieldType" : "CONNECTOR",
+                "label" : "Street_2",
+                "nativeName" : "Street_2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Street_3",
+                "fieldType" : "CONNECTOR",
+                "label" : "Street_3",
+                "nativeName" : "Street_3",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Street_4",
+                "fieldType" : "CONNECTOR",
+                "label" : "Street_4",
+                "nativeName" : "Street_4",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "House_Number_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "House_Number_1",
+                "nativeName" : "House_Number_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "House_Number_2",
+                "fieldType" : "CONNECTOR",
+                "label" : "House_Number_2",
+                "nativeName" : "House_Number_2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "House_Number_3",
+                "fieldType" : "CONNECTOR",
+                "label" : "House_Number_3",
+                "nativeName" : "House_Number_3",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "House_Number_4",
+                "fieldType" : "CONNECTOR",
+                "label" : "House_Number_4",
+                "nativeName" : "House_Number_4",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Delivery_Service_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Delivery_Service_1",
+                "nativeName" : "Delivery_Service_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Delivery_Service_2",
+                "fieldType" : "CONNECTOR",
+                "label" : "Delivery_Service_2",
+                "nativeName" : "Delivery_Service_2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Postal_Code_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Postal_Code_1",
+                "nativeName" : "Postal_Code_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Locality_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Locality_1",
+                "nativeName" : "Locality_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Locality_2",
+                "fieldType" : "CONNECTOR",
+                "label" : "Locality_2",
+                "nativeName" : "Locality_2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Locality_3",
+                "fieldType" : "CONNECTOR",
+                "label" : "Locality_3",
+                "nativeName" : "Locality_3",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Locality_4",
+                "fieldType" : "CONNECTOR",
+                "label" : "Locality_4",
+                "nativeName" : "Locality_4",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Locality_5",
+                "fieldType" : "CONNECTOR",
+                "label" : "Locality_5",
+                "nativeName" : "Locality_5",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Locality_6",
+                "fieldType" : "CONNECTOR",
+                "label" : "Locality_6",
+                "nativeName" : "Locality_6",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Administrative_Division_Standard_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Administrative_Division_Standard_1",
+                "nativeName" : "Administrative_Division_Standard_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Administrative_Division_Standard_2",
+                "fieldType" : "CONNECTOR",
+                "label" : "Administrative_Division_Standard_2",
+                "nativeName" : "Administrative_Division_Standard_2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Administrative_Division_Standard_3",
+                "fieldType" : "CONNECTOR",
+                "label" : "Administrative_Division_Standard_3",
+                "nativeName" : "Administrative_Division_Standard_3",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Administrative_Division_Name_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Administrative_Division_Name_1",
+                "nativeName" : "Administrative_Division_Name_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Administrative_Division_Name_2",
+                "fieldType" : "CONNECTOR",
+                "label" : "Administrative_Division_Name_2",
+                "nativeName" : "Administrative_Division_Name_2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Administrative_Division_Name_3",
+                "fieldType" : "CONNECTOR",
+                "label" : "Administrative_Division_Name_3",
+                "nativeName" : "Administrative_Division_Name_3",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Administrative_Division_Abbreviation_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Administrative_Division_Abbreviation_1",
+                "nativeName" : "Administrative_Division_Abbreviation_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Administrative_Division_Abbreviation_2",
+                "fieldType" : "CONNECTOR",
+                "label" : "Administrative_Division_Abbreviation_2",
+                "nativeName" : "Administrative_Division_Abbreviation_2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Administrative_Division_Abbreviation_3",
+                "fieldType" : "CONNECTOR",
+                "label" : "Administrative_Division_Abbreviation_3",
+                "nativeName" : "Administrative_Division_Abbreviation_3",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Administrative_Division_ISO_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Administrative_Division_ISO_1",
+                "nativeName" : "Administrative_Division_ISO_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Administrative_Division_ISO_2",
+                "fieldType" : "CONNECTOR",
+                "label" : "Administrative_Division_ISO_2",
+                "nativeName" : "Administrative_Division_ISO_2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Administrative_Division_ISO_3",
+                "fieldType" : "CONNECTOR",
+                "label" : "Administrative_Division_ISO_3",
+                "nativeName" : "Administrative_Division_ISO_3",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Country_Name_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Country_Name_1",
+                "nativeName" : "Country_Name_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Country_Name_2",
+                "fieldType" : "CONNECTOR",
+                "label" : "Country_Name_2",
+                "nativeName" : "Country_Name_2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Country_ISO3_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Country_ISO3_1",
+                "nativeName" : "Country_ISO3_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Country_ISO3_2",
+                "fieldType" : "CONNECTOR",
+                "label" : "Country_ISO3_2",
+                "nativeName" : "Country_ISO3_2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Country_ISO2_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Country_ISO2_1",
+                "nativeName" : "Country_ISO2_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Country_ISO2_2",
+                "fieldType" : "CONNECTOR",
+                "label" : "Country_ISO2_2",
+                "nativeName" : "Country_ISO2_2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Country_ISO_Number_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Country_ISO_Number_1",
+                "nativeName" : "Country_ISO_Number_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Country_ISO_Number_2",
+                "fieldType" : "CONNECTOR",
+                "label" : "Country_ISO_Number_2",
+                "nativeName" : "Country_ISO_Number_2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Residue_Value_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Residue_Value_1",
+                "nativeName" : "Residue_Value_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Residue_Type_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Residue_Type_1",
+                "nativeName" : "Residue_Type_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Residue_Value_2",
+                "fieldType" : "CONNECTOR",
+                "label" : "Residue_Value_2",
+                "nativeName" : "Residue_Value_2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Residue_Type_2",
+                "fieldType" : "CONNECTOR",
+                "label" : "Residue_Type_2",
+                "nativeName" : "Residue_Type_2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Residue_Value_3",
+                "fieldType" : "CONNECTOR",
+                "label" : "Residue_Value_3",
+                "nativeName" : "Residue_Value_3",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Residue_Type_3",
+                "fieldType" : "CONNECTOR",
+                "label" : "Residue_Type_3",
+                "nativeName" : "Residue_Type_3",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Address_Lines_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Address_Lines_1",
+                "nativeName" : "Address_Lines_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Address_Lines_2",
+                "fieldType" : "CONNECTOR",
+                "label" : "Address_Lines_2",
+                "nativeName" : "Address_Lines_2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Address_Lines_3",
+                "fieldType" : "CONNECTOR",
+                "label" : "Address_Lines_3",
+                "nativeName" : "Address_Lines_3",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Address_Lines_4",
+                "fieldType" : "CONNECTOR",
+                "label" : "Address_Lines_4",
+                "nativeName" : "Address_Lines_4",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Address_Lines_5",
+                "fieldType" : "CONNECTOR",
+                "label" : "Address_Lines_5",
+                "nativeName" : "Address_Lines_5",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Address_Lines_6",
+                "fieldType" : "CONNECTOR",
+                "label" : "Address_Lines_6",
+                "nativeName" : "Address_Lines_6",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Last_Line_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Last_Line_1",
+                "nativeName" : "Last_Line_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Formatted_Address_Lines_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Formatted_Address_Lines_1",
+                "nativeName" : "Formatted_Address_Lines_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Formatted_Address_Lines_2",
+                "fieldType" : "CONNECTOR",
+                "label" : "Formatted_Address_Lines_2",
+                "nativeName" : "Formatted_Address_Lines_2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Formatted_Address_Lines_3",
+                "fieldType" : "CONNECTOR",
+                "label" : "Formatted_Address_Lines_3",
+                "nativeName" : "Formatted_Address_Lines_3",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Formatted_Address_Lines_4",
+                "fieldType" : "CONNECTOR",
+                "label" : "Formatted_Address_Lines_4",
+                "nativeName" : "Formatted_Address_Lines_4",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Formatted_Address_Lines_5",
+                "fieldType" : "CONNECTOR",
+                "label" : "Formatted_Address_Lines_5",
+                "nativeName" : "Formatted_Address_Lines_5",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Formatted_Address_Lines_6",
+                "fieldType" : "CONNECTOR",
+                "label" : "Formatted_Address_Lines_6",
+                "nativeName" : "Formatted_Address_Lines_6",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Formatted_Address_Lines_7",
+                "fieldType" : "CONNECTOR",
+                "label" : "Formatted_Address_Lines_7",
+                "nativeName" : "Formatted_Address_Lines_7",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Formatted_Address_Lines_8",
+                "fieldType" : "CONNECTOR",
+                "label" : "Formatted_Address_Lines_8",
+                "nativeName" : "Formatted_Address_Lines_8",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Formatted_Address_Lines_9",
+                "fieldType" : "CONNECTOR",
+                "label" : "Formatted_Address_Lines_9",
+                "nativeName" : "Formatted_Address_Lines_9",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Formatted_Address_Lines_10",
+                "fieldType" : "CONNECTOR",
+                "label" : "Formatted_Address_Lines_10",
+                "nativeName" : "Formatted_Address_Lines_10",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Formatted_Address_Lines_11",
+                "fieldType" : "CONNECTOR",
+                "label" : "Formatted_Address_Lines_11",
+                "nativeName" : "Formatted_Address_Lines_11",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Formatted_Address_Lines_12",
+                "fieldType" : "CONNECTOR",
+                "label" : "Formatted_Address_Lines_12",
+                "nativeName" : "Formatted_Address_Lines_12",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Formatted_Address_Lines_13",
+                "fieldType" : "CONNECTOR",
+                "label" : "Formatted_Address_Lines_13",
+                "nativeName" : "Formatted_Address_Lines_13",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Formatted_Address_Lines_14",
+                "fieldType" : "CONNECTOR",
+                "label" : "Formatted_Address_Lines_14",
+                "nativeName" : "Formatted_Address_Lines_14",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Formatted_Address_Lines_15",
+                "fieldType" : "CONNECTOR",
+                "label" : "Formatted_Address_Lines_15",
+                "nativeName" : "Formatted_Address_Lines_15",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Verification_Status_Code",
+                "fieldType" : "CONNECTOR",
+                "label" : "Verification_Status_Code",
+                "nativeName" : "Verification_Status_Code",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Result_Quality",
+                "fieldType" : "CONNECTOR",
+                "label" : "Result_Quality",
+                "nativeName" : "Result_Quality",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Match_Percentage",
+                "fieldType" : "CONNECTOR",
+                "label" : "Match_Percentage",
+                "nativeName" : "Match_Percentage",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Address_Type",
+                "fieldType" : "CONNECTOR",
+                "label" : "Address_Type",
+                "nativeName" : "Address_Type",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "SNA_Category",
+                "fieldType" : "CONNECTOR",
+                "label" : "SNA_Category",
+                "nativeName" : "SNA_Category",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "ID_TIERS",
+                "fieldType" : "CONNECTOR",
+                "label" : "ID_TIERS",
+                "nativeName" : "ID_TIERS",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "NOM",
+                "fieldType" : "CONNECTOR",
+                "label" : "NOM",
+                "nativeName" : "NOM",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "PRENOM",
+                "fieldType" : "CONNECTOR",
+                "label" : "PRENOM",
+                "nativeName" : "PRENOM",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "CONTACT_TYPE",
+                "fieldType" : "CONNECTOR",
+                "label" : "CONTACT_TYPE",
+                "nativeName" : "CONTACT_TYPE",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "ADDRESS_LINE1",
+                "fieldType" : "CONNECTOR",
+                "label" : "ADDRESS_LINE1",
+                "nativeName" : "ADDRESS_LINE1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "ADDRESS_LINE2",
+                "fieldType" : "CONNECTOR",
+                "label" : "ADDRESS_LINE2",
+                "nativeName" : "ADDRESS_LINE2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "HOUSE_NUMBER",
+                "fieldType" : "CONNECTOR",
+                "label" : "HOUSE_NUMBER",
+                "nativeName" : "HOUSE_NUMBER",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "STREET_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "STREET_NAME",
+                "nativeName" : "STREET_NAME",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "SUB_BUILDING",
+                "fieldType" : "CONNECTOR",
+                "label" : "SUB_BUILDING",
+                "nativeName" : "SUB_BUILDING",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "POSTAL_CODE",
+                "fieldType" : "CONNECTOR",
+                "label" : "POSTAL_CODE",
+                "nativeName" : "POSTAL_CODE",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "LOCALITY",
+                "fieldType" : "CONNECTOR",
+                "label" : "LOCALITY",
+                "nativeName" : "LOCALITY",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "ADMINISTRATIVE_DIVISION1",
+                "fieldType" : "CONNECTOR",
+                "label" : "ADMINISTRATIVE_DIVISION1",
+                "nativeName" : "ADMINISTRATIVE_DIVISION1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "COUNTRY",
+                "fieldType" : "CONNECTOR",
+                "label" : "COUNTRY",
+                "nativeName" : "COUNTRY",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "EMAIL",
+                "fieldType" : "CONNECTOR",
+                "label" : "EMAIL",
+                "nativeName" : "EMAIL",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "TELEPHONE",
+                "fieldType" : "CONNECTOR",
+                "label" : "TELEPHONE",
+                "nativeName" : "TELEPHONE",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "address_out_v1.csv"
+                  }
+                ]
+              }
+            ],
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2025-11-12T16:12:26.710Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "false"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true",
+                "names" : [
+                  {
+                    "inputName" : "_NewField"
+                  },
+                  {
+                    "inputName" : "Output"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "sessionProperties" : [
+          {
+            "name" : "Append if Exists",
+            "value" : "NO"
+          },
+          {
+            "name" : "Create Target Directory",
+            "value" : "NO"
+          },
+          {
+            "name" : "Header Options",
+            "value" : "No Header"
+          },
+          {
+            "name" : "Output Type",
+            "value" : "File"
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "dataAdapter" : {
+          "connectionId" : "saas:@izSVfHfBGKGjui0zKAmkEN",
+          "connectionName" : "Flat_address",
+          "excludeDynamicFileNameField" : "true",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "true",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "_NewField",
+            "label" : "_NewField",
+            "path" : "_NewField",
+            "retainMetadata" : "false",
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "none"
+            }
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2026-01-07T21:16:18.260Z",
+        "name" : "HierarchyBuilder",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          },
+          {
+            "input" : "false",
+            "name" : "DefaultOutputGroup",
+            "output" : "true"
+          }
+        ],
+        "collectAllRoots" : "true",
+        "enablePassthrough" : "false",
+        "inputSorted" : "false",
+        "outputFormat" : "String",
+        "outputType" : "NONE",
+        "performanceMode" : "true",
+        "schemaId" : "@jT0QfWvKJUPbtWZHjDLPaz",
+        "schemaName" : "HS_FactureX",
+        "uiCollectAllRoots" : "false",
+        "useLabels" : "false",
+        "outputFieldPrecision" : 1048576,
+        "outputField" : {
+          "name" : "Output",
+          "platformType" : {
+            "name" : "string"
+          },
+          "precision" : 1048576,
+          "scale" : 0
+        },
+        "xFieldMap" : {
+          "denormalized" : "false",
+          "mappings" : [
+            {
+              "groupName" : "Source",
+              "isRoot" : "false",
+              "xPath" : "/rsm:CrossIndustryInvoice",
+              "xfields" : [
+                {
+                  "name" : "Organization_1",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/rsm:CrossIndustryInvoice/rsm:ExchangedDocumentContext/ram:TestIndicator/udt:Indicator"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "createTime" : "2026-01-07T21:19:32.738Z",
+        "name" : "Expression",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "windowConfigurationEnabled" : "false",
+        "fields" : [
+          {
+            "defaultValue" : "ERROR('transformation error')",
+            "name" : "NewField",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 100,
+            "scale" : 0,
+            "expFieldType" : "OUTPUT",
+            "expression" : "House_Number_1||'.csv'"
+          },
+          {
+            "defaultValue" : "ERROR('transformation error')",
+            "name" : "key",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 100,
+            "scale" : 0,
+            "expFieldType" : "OUTPUT",
+            "expression" : "'1'"
+          }
+        ],
+        "windowSpec" : {
+          "allRowsFollowing" : "false",
+          "allRowsPreceding" : "false",
+          "endOffset" : 0,
+          "startOffset" : 0,
+          "partitionKeys" : null
+        }
+      },
+      {
+        "createTime" : "2026-01-07T21:20:22.897Z",
+        "name" : "Joiner",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Cache Directory",
+            "value" : "$PMCacheDir"
+          },
+          {
+            "name" : "Null ordering in master",
+            "value" : "Null is Highest Value"
+          },
+          {
+            "name" : "Null ordering in detail",
+            "value" : "Null is Higest Value"
+          },
+          {
+            "name" : "Joiner Data Cache Size",
+            "value" : "AUTO"
+          },
+          {
+            "name" : "Joiner Index Cache Size",
+            "value" : "AUTO"
+          },
+          {
+            "name" : "Sorted Input",
+            "value" : "true"
+          },
+          {
+            "name" : "Master Sort Order",
+            "value" : "AUTO"
+          },
+          {
+            "name" : "Transformation Scope",
+            "value" : "All Input"
+          },
+          {
+            "name" : "Optional",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "Master",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          },
+          {
+            "input" : "true",
+            "name" : "Detail",
+            "output" : "false",
+            "conflictResolutions" : [
+              {
+                "precedingGroupName" : "DefaultGroup",
+                "precedingTxName" : "Aggregator",
+                "rule" : {
+                  "bulkRename" : "true",
+                  "include" : "true",
+                  "bulkRenameOption" : {
+                    "literal" : "_",
+                    "suffix" : "false"
+                  }
+                }
+              }
+            ],
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true",
+                "names" : [
+                  {
+                    "inputName" : "_key"
+                  },
+                  {
+                    "inputName" : "_NewField"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "input" : "false",
+            "name" : "OutputGroup",
+            "output" : "true"
+          }
+        ],
+        "joinType" : "Normal Join",
+        "joinConditions" : [
+          {
+            "leftOperand" : "key",
+            "operator" : "=",
+            "rightOperand" : "_key"
+          }
+        ]
+      },
+      {
+        "createTime" : "2026-01-07T21:20:36.944Z",
+        "name" : "Expression1",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "conflictResolutions" : [
+              {
+                "precedingGroupName" : "DefaultGroup",
+                "precedingTxName" : "Aggregator",
+                "rule" : {
+                  "bulkRename" : "true",
+                  "include" : "true",
+                  "bulkRenameOption" : {
+                    "literal" : "__",
+                    "suffix" : "false"
+                  }
+                }
+              }
+            ],
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "windowConfigurationEnabled" : "false",
+        "fields" : [
+          {
+            "defaultValue" : "ERROR('transformation error')",
+            "name" : "key",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0,
+            "expFieldType" : "OUTPUT",
+            "expression" : "'1'"
+          }
+        ],
+        "windowSpec" : {
+          "allRowsFollowing" : "false",
+          "allRowsPreceding" : "false",
+          "endOffset" : 0,
+          "startOffset" : 0,
+          "partitionKeys" : null
+        }
+      },
+      {
+        "createTime" : "2026-01-07T21:35:34.518Z",
+        "name" : "Aggregator",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "groupByFieldsList" : {
+          "fields" : [
+            {
+              "fieldName" : "key"
+            }
+          ]
+        }
+      },
+      {
+        "createTime" : "2026-01-07T21:37:53.716Z",
+        "name" : "Aggregator1",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "groupByFieldsList" : {
+          "fields" : [
+            {
+              "fieldName" : "key"
+            }
+          ]
+        }
+      }
+    ],
+    "variables" : [
+      {
+        "aggregationType" : "MAX",
+        "expressionVariable" : "false",
+        "name" : "param_in_out",
+        "platformType" : {
+          "name" : "string"
+        },
+        "precision" : 10,
+        "retentionPolicy" : "ON_SUCCESS_OR_WARNING",
+        "scale" : 0
+      }
+    ]
+  },
+  "vcsExportTime" : "2026-01-21 01:03:29 CET"
+}

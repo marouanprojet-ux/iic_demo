@@ -1,8 +1,8 @@
 {
   "objectInfo" : {
-    "id" : "jjoFAKXTy4Qfcfdct7g2ye",
-    "name" : "CDI_USECASE",
-    "type" : "Project",
+    "id" : "guKwRJgse2HkbQHNE6sWqG",
+    "name" : "TEST",
+    "type" : "Folder",
     "metadata" : {
       "modelVersion" : {
         "major" : 0,
@@ -11,14 +11,14 @@
       "repoInfo" : null,
       "contextAttributes" : [ ],
       "additionalInfo" : {
-        "description" : "CDI_USECASE",
+        "description" : "",
         "contentType" : "Binary",
         "documentState" : "COMPLETE"
       }
     }
   },
   "dataFileExtension" : "json",
-  "updateTime" : "2026-01-21T00:03:29.622Z",
+  "updateTime" : "2026-01-21T00:03:29.621Z",
   "objectRefs" : [ ],
   "readableFileExtension" : null,
   "readableFilePresent" : false
