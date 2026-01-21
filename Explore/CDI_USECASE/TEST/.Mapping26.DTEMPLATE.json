@@ -16,14 +16,14 @@
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : "",
-        "contentType" : null,
+        "description" : "cccc",
+        "contentType" : "JSON",
         "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2026-01-21T00:03:29.620Z",
+  "updateTime" : "2026-01-21T00:20:55.986Z",
   "objectRefs" : [ {
     "id" : "jT0QfWvKJUPbtWZHjDLPaz",
     "name" : "HS_FactureX",
